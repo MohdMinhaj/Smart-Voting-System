@@ -1,0 +1,176 @@
+.container {
+  background-color: #E8DBB3;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 15px; 
+  box-sizing: border-box;
+  overflow-x: hidden; 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.formCard {
+  background: #E8DBB3;
+  padding: 30px 20px; 
+  border-radius: 30px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 12px 12px 24px #c5ba98, 
+             -12px -12px 24px #ffffce;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+
+@media (max-width: 600px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .fullWidth {
+    grid-column: span 1;
+  }
+
+  .formCard {
+    padding: 25px 15px;
+  }
+
+  h1 {
+    font-size: 2.2rem !important; 
+    text-align: center;
+  }
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.fullWidth {
+  grid-column: span 2;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #5d5746;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+
+.startVotingBtn {
+  margin-top: 50px;
+  background: #E8DBB3; 
+  color: #34c759;     
+  padding: 18px 60px;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 900;
+  border: none;
+  cursor: pointer;
+  
+  
+  box-shadow: 10px 10px 20px #c5ba98, 
+             -10px -10px 20px #ffffce;
+  
+  transition: all 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.startVotingBtn:hover {
+  color: #28a745;
+  transform: scale(1.05);
+  box-shadow: 12px 12px 25px #c5ba98, 
+             -12px -12px 25px #ffffce;
+}
+
+.startVotingBtn:active {
+  box-shadow: inset 6px 6px 12px #c5ba98, 
+              inset -6px -6px 12px #ffffce;
+  transform: scale(0.98);
+}
+
+.input {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  background: #E8DBB3;
+  box-shadow: inset 4px 4px 8px #c5ba98, 
+              inset -4px -4px 8px #ffffce;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.uploadBox {
+  grid-column: span 2;
+  background: #E8DBB3;
+  padding: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 4px 4px 8px #c5ba98, 
+             -4px -4px 8px #ffffce;
+  font-weight: 600;
+  color: #5d5746;
+}
+
+@media (max-width: 600px) {
+  .uploadBox {
+    grid-column: span 1;
+  }
+}
+
+.addBtn {
+  grid-column: span 2;
+  background: #E8DBB3;
+  color: #0071e3;
+  padding: 16px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 6px 6px 12px #c5ba98, 
+             -6px -6px 12px #ffffce;
+}
+
+@media (max-width: 600px) {
+  .addBtn {
+    grid-column: span 1;
+  }
+}
+
+.startBtn {
+  width: 90%;
+  max-width: 300px;
+  margin-top: 40px;
+  background: #E8DBB3;
+  color: #34c759;
+  padding: 15px;
+  border-radius: 40px;
+  font-size: 17px;
+  font-weight: 900;
+  border: none;
+  box-shadow: 8px 8px 16px #c5ba98, 
+             -8px -8px 16px #ffffce;
+}
+
+.head1{
+  color: rgb(59, 121, 123);
+}

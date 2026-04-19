@@ -1,0 +1,99 @@
+.container {
+  background-color: #E8DBB3;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 50px;
+  justify-items: center;
+}
+
+.candidateWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.voteBtn {
+  width: 180px;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  background: #E8DBB3;
+  color: #0071e3;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 6px 6px 12px #c5ba98, -6px -6px 12px #ffffce;
+  transition: all 0.2s ease;
+}
+
+.voteBtn:active:not(:disabled) {
+  box-shadow: inset 4px 4px 8px #c5ba98, inset -4px -4px 8px #ffffce;
+  transform: scale(0.95);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(232, 219, 179, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lockText {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #d70015;
+  text-transform: uppercase;
+}
+
+
+.finishBtn {
+  margin-top: 40px;
+  background: #d70015; 
+  color: white;
+  padding: 15px 45px;
+  border-radius: 50px;
+  border: none;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 8px 8px 16px #c5ba98, -8px -8px 16px #ffffce;
+  transition: all 0.3s ease;
+}
+
+.finishBtn:hover:not(:disabled) {
+  transform: scale(1.05);
+  background: #ff2d55;
+}
+
+.finishBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+.container {
+  overflow-y: auto;
+  max-height: 100vh;
+  justify-content: flex-start;
+  padding-bottom: 50px;
+}
